@@ -23,13 +23,9 @@ $(document).ready(function() {
     let topping = $("input:radio[name=topping]:checked").val();
     let size = $("input:radio[name=size]:checked").val();
     let quantity = parseInt($("#quantity").val());
-    console.log(topping)
+    console.log(topping, size, quantity)
   
     
-    let pizza1 = new Pizza(topping, size);
-    // console.log(newTicket);
-    newTicket.ticketCharge()
-    // console.log(newTicket.ticketPrice);
-    $("#answer").text(`We have you booked for ${movieTitle} at ${time}:00, and the ticket price is ${newTicket.ticketPrice} dollars!`)
+    
   });
 });

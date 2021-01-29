@@ -29,13 +29,15 @@ By Olha Hizhytska
 
 ## Specs
 Describe: new Pizza()
-1.Test: "Object constructor Pizza should create a new object with specified properties and value"
+1.Test: "Object constructor Pizza should create a new object with specified properties and value".
 Expect: (new Pizza("cheese","small").toEqual(Pizza {topping: "cheese", size: "small"})).
 
 2.Test: "Prototype constructor should create a new property "price" and a method to calculate this price for their instances".
-Expect: (pizza1.calculatePrice().toEqual(Pizza {topping: "cheese", size: "small", price: 10}))
+Expect: (pizza1.calculatePrice().toEqual(Pizza {topping: "cheese", size: "small", price: 10})).
 
-
+Describe submit()
+1.Test: "Clicking on submit button, it should collect all the data from inputs".
+Expect: (submit(input: toppings, input: size, input: quantity).toEqual(anchovy large 1)).
 
 ## Known Bugs
 
