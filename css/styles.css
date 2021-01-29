@@ -2,3 +2,14 @@
   display: none;
 }
 
+.row {
+  margin: 10%;
+  height: 10em;
+  
+  margin: 10px 0;
+  background-color: orange;
+}
+
+.container > h1 {
+  text-align: center;
+}
