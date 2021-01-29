@@ -8,45 +8,46 @@
   <title>Italian Pizza</title>
 </head>
 <body>
-  <nav>
-  </nav>
   <div class="container">
     <h1>Italian Pizza </h1>
     <form id="order">
-    <div class="row align-items-end">
-      <img src="images/pizza.jpg" class="rowimage">
-      <div class="col">
-        <h2>Toppings</h2>
-        <input type="radio" name="topping" value="cheese" checked> cheese
-        <br>
-        <input type="radio" name="topping" value="pepperoni" > pepperoni
-        <br>
-        <input type="radio" name="topping" value="anchovy" > anchovy
-        <br>
-        <br>
+      <div class="row align-items-end">
+        <img src="images/pizza.jpg" class="rowimage">
+        <div class="col">
+          <h2>Toppings</h2>
+            <input type="radio" name="topping" value="cheese" checked> cheese
+            <br>
+            <input type="radio" name="topping" value="pepperoni" > pepperoni
+            <br>
+            <input type="radio" name="topping" value="anchovy" > anchovy
+            <br>
+            <br>
         </div>
-      <div class="col">
-        <h2>Size</h2>
-        <input type="radio" name="size" value="small" checked> small
+        <div class="col">
+          <h2>Size</h2>
+            <input type="radio" name="size" value="small" checked> small
+            <br>
+            <input type="radio" name="size" value="medium" > medium
+            <br>
+            <input type="radio" name="size" value="large" > large
+            <br>
+            <br>
+        </div>
+        <div class="col">
+          <h2>Quantity</h2>
+            <input type="number" class="form-control" id="quantity">
+          <br>
+        </div>
         <br>
-        <input type="radio" name="size" value="medium" > medium
+        <button type="submit" class="btn btn-danger btn-block">OK</button>
         <br>
-        <input type="radio" name="size" value="large" > large
-        <br>
-        <br>
+        <div id="display_order"></div>
+        </div>
       </div>
-      <div class="col">
-        <h2>Quantity</h2>
-        <input type="number" class="form-control" id="quantity">
-        <br>
-      </div>
-      <br>
-      <button type="submit" class="btn btn-danger btn-block">OK</button>
-      <br>
-    </div>
+    </form>
     
-  </form>
-  </div>
+
+  
 </body>
 </html>
 

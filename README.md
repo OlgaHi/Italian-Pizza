@@ -33,7 +33,10 @@ Describe: new Pizza()
 Expect: (new Pizza("cheese","small").toEqual(Pizza {topping: "cheese", size: "small"})).
 
 2.Test: "Prototype constructor should create a new property "price" and a method to calculate this price for their instances".
-Expect: (pizza1.calculatePrice().toEqual(Pizza {topping: "cheese", size: "small", price: 10})).
+Expect: (pizza1.calculatePrice(1).toEqual(Pizza {topping: "cheese", size: "small", price: 10})).
+
+3.Test: "Prototype constructor should create a new method to calculate the total price for their instances".
+Expect: (pizza1.calculateTotalPrice(2).toEqual(Pizza {topping: "cheese", size: "small", price: 20})).
 
 Describe submit()
 1.Test: "Clicking on submit button, it should collect all the data from inputs".
