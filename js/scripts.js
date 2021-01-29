@@ -7,13 +7,15 @@ function Pizza(topping, size) {
 
 Pizza.prototype.calculatePrice = function() {
   if (this.topping && this.size === "small") {
-    this.price = 10;
+    return this.price = 10;
   } else if (this.topping && this.size === "medium") {
-    this.price = 15;
+    return this.price = 15;
   } else if (this.topping && this.size === "large") {
-    this.price = 20;
+    return this.price = 20;
   } 
 }
 let pizza1 = new Pizza("cheese", "small");
 pizza1.calculatePrice()
 console.log(pizza1)
+
+
