@@ -27,6 +27,11 @@ By Olha Hizhytska
 
 - Open index.html in your browser.
 
+## Specs
+Describe: new Pizza()
+1.Test: "Object constructor Pizza should create a new object with specified properties and value"
+Expect: (new Pizza("cheese","small").toEqual(Pizza {topping: "cheese", size: "small"}))
+
 ## Known Bugs
 
 - No known issues
