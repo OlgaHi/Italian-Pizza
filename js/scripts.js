@@ -26,9 +26,15 @@ $(document).ready(function() {
     let quantity = parseInt($("#quantity").val());
     
     const pizza1 = new Pizza (topping, size, quantity)
+    if (quantity > 0) {
     pizza1.calculatePrice();
     pizza1.calculateTotalPrice();
     
     $("#display_order").text(`Thank you for your order! Your total price is ${pizza1.totalPrice} $.`).slideDown();
+    $(this)[0].reset();
+    } else {
+      $("#alert").show()
+    }
+    
   });
 });

@@ -41,6 +41,8 @@ Expect: (pizza1.calculateTotalPrice(2).toEqual(Pizza {topping: "cheese", size: 
 Describe submit()
 1.Test: "Clicking on submit button, it should collect all the data from inputs".
 Expect: (submit(input: toppings, input: size, input: quantity).toEqual(anchovy large 1)).
+2.Test: "It should check if a user provide a number more than 0".
+Expect: (submit(input: toppings: pepperoni; size: medium; quantity: 0).toEqual(false)).
 
 ## Known Bugs
 
