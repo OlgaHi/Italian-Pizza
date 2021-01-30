@@ -1,15 +1,14 @@
-
-
-#reply {
+#display_order {
   display: none;
+  font-family: 'sans-seriff', cursive;
+  font-size: 2rem;
+  text-align: center;
 }
 
 .row {
   margin: 10%;
   height: 25em;
-  
   margin: 10px 0;
-  background-color: orange;
 }
 
 .container > h1 {

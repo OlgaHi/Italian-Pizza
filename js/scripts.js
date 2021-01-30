@@ -1,7 +1,7 @@
 function Pizza(topping, size, quantity) {
   this.topping = topping;
   this.size = size;
-  this.quantity = quantity
+  this.quantity = quantity;
 }
 
 Pizza.prototype.calculatePrice = function() {
@@ -29,6 +29,6 @@ $(document).ready(function() {
     pizza1.calculatePrice();
     pizza1.calculateTotalPrice();
     
-    $("#display_order").text(`Thank you for your order! Your total price is ${pizza1.totalPrice} $.`)
+    $("#display_order").text(`Thank you for your order! Your total price is ${pizza1.totalPrice} $.`).slideDown();
   });
 });
