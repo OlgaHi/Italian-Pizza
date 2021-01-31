@@ -5,7 +5,7 @@ This website is for a pizza company where a user can choose one of the individua
 
 
 
-![Homepage](images/)
+![Homepage](images/screenshot.png)
 
 ## Technologies Used:
 
@@ -18,18 +18,21 @@ This website is for a pizza company where a user can choose one of the individua
 
 ## Description
 
-This application:
- - Allow the user to choose toppings, size and quantity for the pizza they'd like to order.
- - Create a pizza object constructor with properties for toppings and size.
- - Create a prototype method for the cost of a pizza depending on the selections chosen. Use your own formula for this.
+This application demonstrates practicing object-oriented-JavaScript, in which I created:
+ - user form to gather input data.
+ - object constructor with properties for toppings, size and quantity.
+ - prototype methods for the individual cost of a pizza depending on the selections chosen and the total cost, depending on the quantity chosen.
 
  
-
 ## Setup
 
 - Clone this repository to your desktop, using next command:
 
+  git clone https://github.com/OlgaHi/Italian-Pizza.git
+
 - Navigate to the top level of the directory.
+
+  cd Italian-Pizza
 
 - Open index.html in your browser.
 
