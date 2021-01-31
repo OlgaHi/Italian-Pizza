@@ -69,4 +69,4 @@ Copyright (c) 2021 Olha Hizhytska
 
 - Olha Hizhytska olgainfotech@gmail.com
 
-## Please check my Portfolio [here]()
+## You can see this project [here](https://olgahi.github.io/Italian-Pizza/)
