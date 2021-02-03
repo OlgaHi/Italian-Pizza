@@ -21,7 +21,8 @@ This website is for a pizza company where a user can choose one of the individua
 This application demonstrates practicing object-oriented-JavaScript, in which I created:
  - user form to gather input data.
  - object constructor with properties for toppings, size and quantity.
- - prototype methods for the individual cost of a pizza depending on the selections chosen and the total cost, depending on the quantity chosen.
+ - prototype method for the individual cost of a pizza, depending on the selections chosen.
+ - prototype method for the total price, depending on the individual price and the quantity chosen.
 
  
 ## Setup
@@ -37,24 +38,22 @@ This application demonstrates practicing object-oriented-JavaScript, in which I 
 - Open index.html in your browser.
 
 ## Specs
-Describe: new Pizza()
+Describe: Pizza()
 
-1.Test: "Object constructor Pizza should create a new object with specified properties and value".
-Expect: (new Pizza("cheese","small").toEqual(Pizza {topping: "cheese", size: "small"})).
+1.Test: "Object constructor Pizza should create a new object with specified properties".
+Expect: (new Pizza(topping, size, quantity)).toEqual(pizza1("cheese", "small", "1")).
 
-2.Test: "Prototype constructor should create a new property "price" and a method to calculate this price for their instances".
-Expect: (pizza1.calculatePrice(1).toEqual(Pizza {topping: "cheese", size: "small", price: 10})).
+2.Test: "Prototype method calculatePrice should calculate the individual price for the instance, depending of the user selection.
+Expect: (pizza1.calculatePrice("cheese", "small", "1").toEqual(10)).
 
-3.Test: "Prototype constructor should create a new method to calculate the total price for their instances".
-Expect: (pizza1.calculateTotalPrice(2).toEqual(Pizza {topping: "cheese", size: "small", price: 20})).
+3.Test: "Prototype method calculatePrice should update the value of the price.
+Expect: (pizza1.price).toEqual(10).
 
-Describe submit()
+4.Test: "Prototype method calculateTotalPrice should calculate the total price for the instance, depending of the user selection.
+Expect: (pizza1.calculateTotalPrice("cheese", "small", "2").toEqual(20)).
 
-1.Test: "Clicking on submit button, it should collect all the data from inputs".
-Expect: (submit(input: toppings, input: size, input: quantity).toEqual(anchovy large 1)).
-
-2.Test: "It should check if a user provide a number more than 0".
-Expect: (submit(input: toppings: pepperoni; size: medium; quantity: 0).toEqual(false)).
+5.Test: "Prototype method calculateTotalPrice should update total price for their instance".
+Expect: (pizza1.totalPrice).toEqual(20).
 
 ## Known Bugs
 
